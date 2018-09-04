@@ -253,6 +253,7 @@ public class AppActivity extends Cocos2dxActivity implements NetWorkBroadcastRec
             rid = data.getQueryParameter("rid");
             Log.i("enjoypuke","get data: " + roomNum + " " + scene + " " + rid);
             if(scene != null && roomNum != null && rid != null) {
+				loginType = 1;
                 callJavaScriptEnterRoom(roomNum,rid);
             }
         }
